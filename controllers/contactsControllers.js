@@ -43,7 +43,7 @@ export const deleteContact = async (req, res, next) => {
   catch (error) {
     next(error);   
   }
-  // res.json({ message: 'template message' })
+  res.json({ message: "Delete success" })
   
 };
 
@@ -56,7 +56,6 @@ export const createContact = async (req, res, next) => {
   catch (error) {
     next(error);
   }
-  // res.json({ message: 'template message' })
 };
 
 export const updateContact = async (req, res, next) => {
